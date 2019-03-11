@@ -1,5 +1,6 @@
 {
   "name": "async-store-test",
+  "description": "A basic POC project for async store.",
   "version": "1.0.0",
   "author": "Kabir Baidhya <kabirbaidhya@gmail.com>",
   "license": "MIT",

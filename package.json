@@ -5,14 +5,17 @@
   "author": "Kabir Baidhya <kabirbaidhya@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "backpack"
+    "start": "backpack",
+    "build": "backpack build"
   },
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "uuid": "^3.3.2"
   },
   "devDependencies": {
     "@types/express": "^4.16.1",
     "@types/node": "^11.10.5",
+    "@types/uuid": "^3.4.4",
     "backpack-core": "^0.8.3",
     "fork-ts-checker-webpack-plugin": "^1.0.0",
     "ts-loader": "^5.3.3",

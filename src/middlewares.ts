@@ -8,7 +8,7 @@ import { Request, Response, NextFunction } from 'express';
  */
 export function requestContext() {
   return (req: Request, res: Response, next: NextFunction) => {
-    store.set('x-id', req.header('x-id'));
+    store.set({ 'x-id': req.header('x-id') });
     next();
   };
 }

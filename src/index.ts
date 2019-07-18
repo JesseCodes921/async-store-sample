@@ -1,8 +1,9 @@
 import * as express from 'express';
 import { Request, Response } from 'express';
 
+import * as store from '@leapfrogtechnology/async-store';
+
 import * as service from './service';
-import * as store from './core/asyncStore';
 import { requestContext, otherMiddleware } from './middlewares';
 
 const app = express();

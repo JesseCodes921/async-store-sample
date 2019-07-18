@@ -1,4 +1,4 @@
-import * as store from './core/asyncStore';
+import * as store from '@leapfrogtechnology/async-store';
 import { Request, Response, NextFunction } from 'express';
 
 /**
@@ -9,6 +9,7 @@ import { Request, Response, NextFunction } from 'express';
 export function requestContext() {
   return (req: Request, res: Response, next: NextFunction) => {
     store.set({ 'x-id': req.header('x-id') });
+
     next();
   };
 }

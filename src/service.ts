@@ -1,4 +1,4 @@
-import * as asyncStore from './core/asyncStore';
+import * as store from '@leapfrogtechnology/async-store';
 
 /**
  * An example function making use of the request context set in the store.
@@ -17,7 +17,7 @@ export async function doSomething() {
  * @returns {Promise<void>}
  */
 async function logRequestContext() {
-  const xId = asyncStore.get('x-id');
+  const xId = store.get('x-id');
 
   console.log('Request context: ', xId); // tslint:disable-line
 }
